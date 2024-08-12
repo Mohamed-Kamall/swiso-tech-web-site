@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  background-color: white;
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    .menu-item {
+      color: black;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .contact-button {
+    background-color: black;
+    color: white;
+    padding: 9px 34px;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
