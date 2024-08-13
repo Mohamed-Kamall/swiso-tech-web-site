@@ -2,8 +2,13 @@ import logo from "./logo.svg";
 import "./App.css";
 import { MenuHeader } from "./screens/header/Header";
 import { IntroSection } from "./screens/sections/IntroSection";
-import { Services } from "./screens/sections/ServicesSection";
+
 import { Solutions } from "./screens/sections/SolutionsSection";
+import { Services } from "./screens/sections/servicesSection";
+import { NetworkSection } from "./screens/sections/NetworkSection";
+import { ValuesSection } from "./screens/sections/ValuesSection";
+import { JourneySection } from "./screens/sections/JourneySection";
+import { PartenerSection } from "./screens/sections/PartenerSection";
 
 function App() {
   return (
@@ -12,6 +17,10 @@ function App() {
       <IntroSection />
       <Services />
       <Solutions />
+      <NetworkSection />
+      <ValuesSection />
+      <JourneySection />
+      <PartenerSection />
     </div>
   );
 }
