@@ -19,11 +19,6 @@ code {
   height: 10px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--lightestgrey);
-}
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #1e8bb0;
@@ -33,4 +28,21 @@ code {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 20px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  display: none;
+}
+::-webkit-scrollbar-button:horizontal:start {
+  background-image: url("./assets/arrow-left.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+::-webkit-scrollbar-button:horizontal:end {
+  background-image: url("./assets/arrow-right.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }

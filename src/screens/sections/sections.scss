@@ -14,6 +14,9 @@
     font-size: 56px;
     font-weight: 900;
     font-family: nunito;
+    animation-name: bg;
+    animation-duration: 2s;
+
     .text-1 {
       color: #000000;
       padding-inline: 8px;
@@ -32,8 +35,12 @@
     width: 100%;
     font-size: 16px;
     font-family: nunito;
+    animation-name: bg;
+    animation-duration: 2s;
   }
   .learn-more-button {
+    animation-name: bg;
+    animation-duration: 2s;
     background-color: black;
     color: white;
     padding: 9px 34px;
@@ -65,6 +72,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      animation-name: bg;
+      animation-duration: 2s;
+
       .text-1 {
         color: #000000;
         padding-inline: 8px;
@@ -88,6 +98,7 @@
       flex-wrap: wrap;
       gap: 30px;
       padding: 30px 0;
+
       .card {
         display: flex;
         flex-direction: column;
@@ -96,6 +107,9 @@
         background-color: #ffffff;
         border: 1px solid#cccccc;
         border-radius: 20px;
+        animation-name: bg;
+        animation-duration: 2s;
+
         .borderless {
           border-bottom: none !important;
         }
@@ -195,6 +209,8 @@
       align-items: flex-start;
       gap: 60px;
       padding: 30px 0;
+      animation-name: bg;
+      animation-duration: 2s;
       @media screen and (max-width: 1000px) {
         width: 90%;
       }
@@ -258,6 +274,8 @@
       justify-content: center;
       align-items: flex-start;
       gap: 20px;
+      animation-name: bg;
+      animation-duration: 2s;
       .why {
         background-color: transparent;
         color: rgb(255, 255, 255);
@@ -286,6 +304,8 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 30px;
+      animation-name: bg;
+      animation-duration: 2s;
       .paragraph {
         width: 400px;
         color: #ffffff;
@@ -334,6 +354,8 @@
       flex-direction: column;
       justify-content: flex-start;
       gap: 30px;
+      animation-name: bg;
+      animation-duration: 2s;
       .left-p {
         color: #000000;
         padding-inline: 8px;
@@ -353,6 +375,8 @@
     .time-line {
       width: 550px;
       display: flex;
+      animation-name: bg;
+      animation-duration: 2s;
       .lines {
         margin-top: 6px;
         .yellow {
@@ -415,6 +439,9 @@
         background-color: transparent !important;
       }
       .card {
+        animation-name: bg;
+        animation-duration: 2s;
+
         background-color: #ffffff;
         display: flex;
         flex-direction: column;
@@ -458,9 +485,9 @@
     .slider {
       margin: auto;
       overflow: auto;
-      position: relative;
       width: 100%;
-
+      animation-name: bg;
+      animation-duration: 2s;
       .slide-track {
         display: flex;
         justify-content: flex-start;
@@ -479,6 +506,239 @@
           border: 1px solid#cccccc;
           border-radius: 20px;
         }
+      }
+    }
+  }
+}
+
+.section-7 {
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("../../assets/Rectangle.png");
+  background-position: right;
+  background-size: 65%;
+  @media screen and (max-width: 1000px) {
+    background-size: 0%;
+  }
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  font-family: nunito;
+  .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 0;
+
+    .left {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 30px 0;
+      gap: 30px;
+      overflow: hidden;
+      animation-name: bg;
+      animation-duration: 2s;
+      .cards {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 30px;
+        @keyframes slide {
+          from {
+            opacity: 0.5;
+            transform: translatex(-20%) scale(0.8);
+          }
+          to {
+            opacity: 1;
+            transform: translatex(0) scale(0.1) !important;
+          }
+        }
+        @keyframes next-slide {
+          from {
+            opacity: 0.5;
+            transform: translatex(2%) scale(0.6);
+          }
+          to {
+            opacity: 1;
+            transform: translatex(10%) scale(0.8);
+          }
+        }
+        .active {
+          display: flex !important;
+          animation-name: slide;
+          animation-duration: 1s;
+        }
+        .next {
+          display: flex !important;
+          background-color: #1c2e61 !important;
+          animation-name: next-slide;
+          animation-duration: 2s;
+          transform: translatex(10%) scale(0.8);
+          z-index: 0;
+        }
+        .card {
+          background-color: #1f8bb1;
+          width: 350px;
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          color: #ffffff;
+          text-align: start;
+          border-radius: 10px;
+          padding: 30px;
+          gap: 20px;
+          .commas {
+            font-size: 50px;
+          }
+          .review {
+            font-size: 14px;
+          }
+          .rating {
+            font-size: 20px;
+          }
+          .client {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .avatar {
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+            }
+            .client-details {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              .client-name {
+                font-size: 16px;
+              }
+              .position {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .buttons-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        animation-name: bg;
+        animation-duration: 2s;
+
+        .hide {
+          display: none !important;
+        }
+        .slider-button {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .right {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 30px 0;
+      text-align: start;
+      animation-name: bg;
+      animation-duration: 2s;
+      .right-name {
+        color: rgb(29, 29, 29);
+        font-size: 18px;
+      }
+      .right-header {
+        width: 50%;
+        color: #000000;
+        font-size: 35px;
+        .blue {
+          color: #1e8bb0;
+        }
+      }
+      .right-description {
+        width: 70%;
+        color: rgb(29, 29, 29);
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@keyframes bg {
+  from {
+    transform: translatey(-50%) scale(0.8);
+  }
+  to {
+    transform: translatey(0) scale(1);
+  }
+}
+.section-8 {
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("../../assets/people.png");
+  background-position: 95%;
+  background-size: 40%;
+  @media screen and (max-width: 1000px) {
+    background-size: 0%;
+  }
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  font-family: nunito;
+  .container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 60px 0;
+    padding: 30px 0;
+    .about-us {
+      width: 500px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: start;
+      gap: 60px;
+      padding: 60px 0;
+      animation-name: bg;
+      animation-duration: 2s;
+
+      .us-header {
+        font-size: 50px;
+        color: #000000;
+        .blue {
+          color: #1e8bb0;
+        }
+      }
+      .us-description {
+        color: #000000;
+        font-size: 22px;
+      }
+      .us-more {
+        background-color: #1e8bb0;
+        color: white;
+        padding: 9px 34px;
+        border: unset;
+        border-radius: 25px;
+        font-size: 20px;
+        cursor: pointer;
       }
     }
   }
