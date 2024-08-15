@@ -26,7 +26,6 @@ export const ClientReviewSection = () => {
   };
 
   useEffect(() => {
-    console.log("current", slideIndex);
     setNext(slideIndex + 1);
   }, [slideIndex]);
 

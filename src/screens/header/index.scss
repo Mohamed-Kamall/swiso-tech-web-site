@@ -7,18 +7,29 @@
   position: fixed;
   background-color: white;
   z-index: 100;
+  animation-name: header-grow;
+  animation-duration: 1s;
   .logo {
     width: 150px;
     height: auto;
+    @media screen and (max-width: 1000px) {
+      visibility: hidden;
+    }
   }
+
   .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 25px;
+    width: 450px;
     .menu-item {
       color: black;
       font-size: 14px;
+      cursor: pointer;
+      &:hover {
+        color: #1e8bb0;
+      }
     }
     @media screen and (max-width: 1000px) {
       display: none;
@@ -32,5 +43,106 @@
     border-radius: 25px;
     font-size: 20px;
     cursor: pointer;
+  }
+}
+
+@keyframes header-grow {
+  from {
+    transform: translatey(-100%);
+  }
+  to {
+    transform: translatey(0);
+  }
+}
+
+.show {
+  @media screen and (max-width: 1000px) {
+    display: flex !important;
+    animation-name: grow;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 240px;
+  }
+}
+
+@keyframes items {
+  from {
+    transform: translate(-300%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes burger {
+  from {
+    transform: translatey(-100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.burger {
+  display: none;
+  width: 35px;
+  position: absolute;
+  top: 29px;
+  left: 10px;
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+  z-index: 200;
+  cursor: pointer;
+  animation-name: burger;
+  animation-duration: 1s;
+}
+.logo-burger {
+  display: none;
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 22px;
+  left: 50px;
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+  z-index: 200;
+}
+
+.drawer {
+  display: none;
+  width: 240px;
+  background-color: #1e8bb0;
+  height: 100vh;
+  position: absolute;
+  z-index: 120;
+  top: 0;
+  left: 0;
+  .drawer-menu {
+    text-align: start;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    animation-name: items;
+    animation-duration: 2s;
+
+    .drawer-item {
+      cursor: pointer;
+      &:hover {
+        color: #090c2d;
+      }
+      font-size: 20px;
+    }
   }
 }

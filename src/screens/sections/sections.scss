@@ -701,7 +701,7 @@
   justify-content: center;
   font-family: nunito;
   .container {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -741,5 +741,257 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+.section-9 {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  font-family: nunito;
+  background-color: rgba(243, 243, 243, 0.9);
+  .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px 0;
+    padding: 30px 0;
+    .left {
+      width: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      text-align: start;
+      padding-right: 30px;
+      .l-header {
+        font-size: 40px;
+        color: #000000;
+        .blue {
+          color: #1e8bb0;
+        }
+      }
+      .description {
+        font-size: 14px;
+        color: #afafaf;
+      }
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+        .input-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          width: 100%;
+          gap: 5px;
+          .label {
+            font-size: 25px;
+            color: #000000;
+          }
+          .input-field {
+            border-radius: 32px;
+            border: unset;
+            padding: 17px;
+            width: 90%;
+            color: #1e8bb0;
+            font-family: nunito;
+          }
+        }
+        .submit-button {
+          background-color: #1e8bb0;
+          color: white;
+          padding: 9px 34px;
+          border: unset;
+          border-radius: 25px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    .right {
+      width: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      text-align: start;
+      .details-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        color: #000000;
+        .text-1 {
+          font-size: 25px;
+        }
+        .text-2 {
+          width: 100%;
+          font-size: 16px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: nunito;
+  background-color: #090c2d;
+  .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 60px 0;
+    padding: 30px 0;
+    .social-media {
+      padding: 40px 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid #1e8bb0;
+      .swiso-logo {
+        width: 275px;
+      }
+      .sm-group {
+        display: flex;
+        justify-content: space-between;
+
+        gap: 20px;
+        .sm-logo {
+          width: 80px;
+        }
+      }
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 20px 0;
+      .contact {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: start;
+        .contact-header {
+          font-size: 25px;
+        }
+        .contact-description {
+          font-size: 16px;
+        }
+        .contacts {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          font-size: 14px;
+
+          .contacts-header {
+            color: #1e8bb0;
+            font-size: 25px;
+          }
+          .contacts-details {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            .detail {
+              width: 50%;
+            }
+          }
+        }
+      }
+      .brief {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 400px;
+        .pages {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 20px;
+          font-size: 14px;
+          .pages-header {
+            font-size: 25px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+      .f-about-us {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        .about-us-header {
+          font-size: 25px;
+        }
+        .us-form-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          width: 100%;
+          gap: 20px;
+          .us-input-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            gap: 5px;
+            .us-input-field {
+              border-radius: 32px;
+              border: unset;
+              padding: 17px;
+              width: 90%;
+              color: #1e8bb0;
+              font-family: nunito;
+            }
+          }
+          .us-submit-button {
+            background-color: #1e8bb0;
+            color: white;
+            padding: 9px 34px;
+            border: unset;
+            border-radius: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .copy-rights {
+    width: 100%;
+    color: #ffffff;
+    background-color: #1e8bb0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+    font-size: 14px;
   }
 }
