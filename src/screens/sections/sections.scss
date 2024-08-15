@@ -7,7 +7,7 @@
   gap: 30px;
   min-height: 70vh;
   .moto-1 {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -79,6 +79,7 @@
         color: #000000;
         padding-inline: 8px;
         font-size: 20px;
+        letter-spacing: 15px;
       }
       .text-2 {
         color: #000000;
@@ -673,12 +674,13 @@
       animation-duration: 2s;
       .right-name {
         color: rgb(29, 29, 29);
-        font-size: 18px;
+        font-size: 14px;
+        letter-spacing: 8px;
       }
       .right-header {
-        width: 50%;
+        width: 70%;
         color: #000000;
-        font-size: 35px;
+        font-size: 45px;
         .blue {
           color: #1e8bb0;
         }

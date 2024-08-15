@@ -49,7 +49,7 @@ export const Solutions = () => {
     <div className="wrapper grey-background">
       <div className="section-2">
         <div className="text-container">
-          <span className="text-1">O U R SOLUTIONS</span>
+          <span className="text-1">OUR SOLUTIONS</span>
           <span className="text-2">Our Software Development</span>
           <span className="text-3">Solutions</span>
         </div>

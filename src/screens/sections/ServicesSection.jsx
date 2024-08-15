@@ -55,7 +55,7 @@ export const Services = () => {
     <div className="wrapper">
       <div className="section-2">
         <div className="text-container">
-          <span className="text-1">O U R S R V I C E S</span>
+          <span className="text-1">OUR SRVICES</span>
           <span className="text-2">Our Software Development</span>
           <span className="text-3">Services</span>
         </div>
