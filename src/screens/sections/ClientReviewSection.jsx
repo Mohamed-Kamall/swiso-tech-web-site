@@ -126,7 +126,10 @@ export const ClientReviewSection = () => {
         <div className="right">
           <div className="right-name">CLIENTS REVIEW</div>
           <div className="right-header">
-            What Clients Say <span className="blue">About Us</span>{" "}
+            <div>What Clients </div>
+            <div>
+              Say <span className="blue">About Us</span>
+            </div>{" "}
           </div>
           <div className="right-description">
             We believe that good software development services go beyond writing

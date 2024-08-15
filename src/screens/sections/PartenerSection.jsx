@@ -46,6 +46,11 @@ export const PartenerSection = () => {
               <img src={partner} />
             </div>
           ))}
+          <div className="card blue-card">
+            <div className="card-header white">+ 50</div>
+            <div className="card-header white align-right">➜</div>
+            <div className="card-header white">Our Partners</div>
+          </div>
         </div>
         <div className="slider-container">
           <div className="slider-header">
