@@ -4,7 +4,7 @@ import { MenuHeader } from "./screens/header/Header";
 import { IntroSection } from "./screens/sections/IntroSection";
 
 import { Solutions } from "./screens/sections/SolutionsSection";
-import { Services } from "./screens/sections/servicesSection";
+import { Services } from "./screens/sections/ServicesSection";
 import { NetworkSection } from "./screens/sections/NetworkSection";
 import { ValuesSection } from "./screens/sections/ValuesSection";
 import { JourneySection } from "./screens/sections/JourneySection";

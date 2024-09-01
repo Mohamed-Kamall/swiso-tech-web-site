@@ -6,6 +6,9 @@
   align-items: center;
   gap: 30px;
   min-height: 70vh;
+  @media screen and (max-width: 500px) {
+    min-height: 40vh;
+  }
   .moto-1 {
     width: 70%;
     display: flex;
@@ -16,6 +19,9 @@
     font-family: nunito;
     animation-name: bg;
     animation-duration: 2s;
+    @media screen and (max-width: 500px) {
+      font-size: 30px;
+    }
 
     .text-1 {
       color: #000000;
@@ -37,6 +43,9 @@
     font-family: nunito;
     animation-name: bg;
     animation-duration: 2s;
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+    }
   }
   .learn-more-button {
     animation-name: bg;
@@ -47,6 +56,9 @@
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
+    @media screen and (max-width: 500px) {
+      font-size: 10px;
+    }
   }
 }
 .grey-background {
@@ -59,7 +71,7 @@
   display: flex;
   justify-content: center;
   .section-2 {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -68,7 +80,7 @@
 
     font-family: nunito;
     .text-container {
-      width: 80%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -80,22 +92,36 @@
         padding-inline: 8px;
         font-size: 20px;
         letter-spacing: 15px;
+        text-align: start;
+        @media screen and (max-width: 500px) {
+          font-size: 14px;
+        }
       }
       .text-2 {
         color: #000000;
         padding-inline: 8px;
         font-size: 40px;
         text-align: start;
+        @media screen and (max-width: 500px) {
+          font-size: 20px;
+        }
       }
       .text-3 {
         color: #1f8bb1;
         padding-inline: 8px;
         font-size: 40px;
+        @media screen and (max-width: 500px) {
+          font-size: 20px;
+        }
       }
     }
     .cards-container {
+      width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      @media screen and (max-width: 1710px) {
+        justify-content: center;
+      }
       flex-wrap: wrap;
       gap: 30px;
       padding: 30px 0;
@@ -142,6 +168,9 @@
             font-size: 16px !important;
             color: #000000 !important;
             font-weight: 100;
+            @media screen and (max-width: 500px) {
+              font-size: 14px !important;
+            }
           }
           .card-description {
             text-align: start;
@@ -167,6 +196,9 @@
             border: 1px solid#cccccc;
             font-weight: 600;
             cursor: pointer;
+            @media screen and (max-width: 500px) {
+              font-size: 12px;
+            }
           }
         }
         &:hover {
@@ -300,6 +332,9 @@
     }
     .end {
       justify-content: flex-end !important;
+      @media screen and (max-width: 1817px) {
+        justify-content: flex-start !important;
+      }
     }
     .inovations {
       width: 100%;
@@ -311,7 +346,7 @@
       animation-name: bg;
       animation-duration: 2s;
       .paragraph {
-        width: 400px;
+        max-width: 380px;
         color: #ffffff;
         padding-inline: 8px;
         font-size: 16px;
@@ -329,7 +364,7 @@
           padding-inline: 15px;
         }
         .ino-paragraph {
-          width: 400px;
+          max-width: 380px;
           font-size: 14px;
           text-align: start;
         }
@@ -365,6 +400,9 @@
         padding-inline: 8px;
         font-size: 20px;
         text-align: start;
+        @media screen and (max-width: 500px) {
+          font-size: 16px;
+        }
       }
       .left-header {
         color: #000000;
@@ -411,6 +449,9 @@
           text-align: start;
           padding: 0 20px;
           height: 155px;
+          @media screen and (max-width: 500px) {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -455,10 +496,13 @@
         justify-content: center;
         align-items: center;
         padding: 40px;
-        width: 250px;
+        width: 240px;
         height: 130px;
         border: 1px solid#cccccc;
         border-radius: 20px;
+        @media screen and (max-width: 500px) {
+          width: 200px;
+        }
         .white {
           color: #ffffff !important;
           font-size: 22px !important;
@@ -531,7 +575,7 @@
   background-image: url("../../assets/Rectangle.png");
   background-position: right;
   background-size: 65%;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1350px) {
     background-size: 0%;
   }
   background-repeat: no-repeat;
@@ -541,7 +585,7 @@
   justify-content: center;
   font-family: nunito;
   .container {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -549,7 +593,7 @@
     padding: 30px 0;
 
     .left {
-      width: 600px;
+      width: 40%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -559,6 +603,9 @@
       overflow: hidden;
       animation-name: bg;
       animation-duration: 2s;
+      @media screen and (max-width: 1350px) {
+        width: 600px;
+      }
       .cards {
         display: flex;
         flex-direction: row-reverse;
@@ -609,14 +656,23 @@
           border-radius: 10px;
           padding: 30px;
           gap: 20px;
+          @media screen and (max-width: 500px) {
+            width: 220px;
+          }
           .commas {
             font-size: 50px;
           }
           .review {
             font-size: 14px;
+            @media screen and (max-width: 500px) {
+              font-size: 10px;
+            }
           }
           .rating {
             font-size: 20px;
+            @media screen and (max-width: 500px) {
+              font-size: 16px;
+            }
           }
           .client {
             display: flex;
@@ -627,6 +683,10 @@
               width: 80px;
               height: 80px;
               border-radius: 50%;
+              @media screen and (max-width: 500px) {
+                width: 50px;
+                height: 50px;
+              }
             }
             .client-details {
               display: flex;
@@ -634,9 +694,15 @@
               align-items: flex-start;
               .client-name {
                 font-size: 16px;
+                @media screen and (max-width: 500px) {
+                  font-size: 12px;
+                }
               }
               .position {
                 font-size: 14px;
+                @media screen and (max-width: 500px) {
+                  font-size: 12px;
+                }
               }
             }
           }
@@ -662,7 +728,7 @@
     }
 
     .right {
-      width: 600px;
+      width: 40%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -672,6 +738,9 @@
       text-align: start;
       animation-name: bg;
       animation-duration: 2s;
+      @media screen and (max-width: 1350px) {
+        width: 600px;
+      }
       .right-name {
         color: rgb(29, 29, 29);
         font-size: 14px;
@@ -681,6 +750,9 @@
         width: 70%;
         color: #000000;
         font-size: 45px;
+        @media screen and (max-width: 500px) {
+          font-size: 30px;
+        }
         .blue {
           color: #1e8bb0;
         }
@@ -689,6 +761,9 @@
         width: 70%;
         color: rgb(29, 29, 29);
         font-size: 18px;
+        @media screen and (max-width: 500px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -739,6 +814,9 @@
       .us-header {
         font-size: 50px;
         color: #000000;
+        @media screen and (max-width: 500px) {
+          font-size: 30px;
+        }
         .blue {
           color: #1e8bb0;
         }
@@ -746,6 +824,9 @@
       .us-description {
         color: #000000;
         font-size: 22px;
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+        }
       }
       .us-more {
         background-color: #1e8bb0;
@@ -755,6 +836,9 @@
         border-radius: 25px;
         font-size: 20px;
         cursor: pointer;
+        @media screen and (max-width: 500px) {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -768,7 +852,7 @@
   font-family: nunito;
   background-color: rgba(243, 243, 243, 0.9);
   .container {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -786,6 +870,9 @@
       .l-header {
         font-size: 40px;
         color: #000000;
+        @media screen and (max-width: 500px) {
+          font-size: 30px;
+        }
         .blue {
           color: #1e8bb0;
         }
@@ -811,6 +898,9 @@
           .label {
             font-size: 25px;
             color: #000000;
+            @media screen and (max-width: 500px) {
+              font-size: 20px;
+            }
           }
           .input-field {
             border-radius: 32px;
@@ -829,6 +919,9 @@
           border-radius: 25px;
           font-size: 20px;
           cursor: pointer;
+          @media screen and (max-width: 500px) {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -856,6 +949,9 @@
           font-size: 14px;
           display: flex;
           justify-content: space-between;
+          @media screen and (max-width: 500px) {
+            flex-direction: column;
+          }
         }
       }
     }
@@ -869,7 +965,7 @@
   font-family: nunito;
   background-color: #090c2d;
   .container {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -886,6 +982,9 @@
       border-bottom: 1px solid #1e8bb0;
       .swiso-logo {
         width: 275px;
+        @media screen and (max-width: 500px) {
+          width: 220px;
+        }
       }
       .sm-group {
         display: flex;
@@ -894,6 +993,9 @@
         gap: 20px;
         .sm-logo {
           width: 80px;
+          @media screen and (max-width: 500px) {
+            width: 60px;
+          }
         }
       }
     }
@@ -911,9 +1013,15 @@
         text-align: start;
         .contact-header {
           font-size: 25px;
+          @media screen and (max-width: 500px) {
+            font-size: 20px;
+          }
         }
         .contact-description {
           font-size: 16px;
+          @media screen and (max-width: 500px) {
+            font-size: 14px;
+          }
         }
         .contacts {
           display: flex;
@@ -924,6 +1032,9 @@
           .contacts-header {
             color: #1e8bb0;
             font-size: 25px;
+            @media screen and (max-width: 500px) {
+              font-size: 20px;
+            }
           }
           .contacts-details {
             display: flex;
@@ -949,6 +1060,9 @@
           font-size: 14px;
           .pages-header {
             font-size: 25px;
+            @media screen and (max-width: 500px) {
+              font-size: 20px;
+            }
             padding-bottom: 10px;
           }
         }

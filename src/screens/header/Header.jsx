@@ -21,13 +21,15 @@ export const MenuHeader = () => {
       />
       <img className="logo-burger" src={logo} />
       <div className="header">
-        <img className="logo" src={logo} />
-        <div className="menu">
-          {menuElements.map((ele) => (
-            <div className="menu-item">{ele.label}</div>
-          ))}
+        <div className="header-container">
+          <img className="logo" src={logo} />
+          <div className="menu">
+            {menuElements.map((ele) => (
+              <div className="menu-item">{ele.label}</div>
+            ))}
+          </div>
+          <button className="contact-button">Contact Us</button>
         </div>
-        <button className="contact-button">Contact Us</button>
       </div>
       <div className={`drawer ${showDrawer ? "show" : ""}`}>
         <div className="drawer-menu">
