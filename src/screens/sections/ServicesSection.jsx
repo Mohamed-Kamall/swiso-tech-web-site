@@ -1,6 +1,6 @@
 import React from "react";
 import webIcon from "../../assets/webIcon.png";
-import mobie from "../../assets/mobileIcon.png";
+import mobile from "../../assets/mobileIcon.png";
 import letter from "../../assets/letter.png";
 import analysis from "../../assets/analysis.png";
 import integration from "../../assets/integration.png";
@@ -19,7 +19,7 @@ export const Services = () => {
       name: "Mobile",
       description:
         "We strongly believe that with mobile apps, development services should cover more than just the coding.",
-      icon: mobie,
+      icon: mobile,
       header: "Mobile Application Development",
     },
     {
@@ -55,7 +55,7 @@ export const Services = () => {
     <div className="wrapper">
       <div className="section-2">
         <div className="text-container">
-          <span className="text-1">OUR SRVICES</span>
+          <span className="text-1">OUR SERVICES</span>
           <span className="text-2">Our Software Development</span>
           <span className="text-3">Services</span>
         </div>
